@@ -28,34 +28,40 @@ Output: 1
  */
 const maxArea = function(height) {
 
-    // create pointers to traverse array
-    let left = 0;
-    let right = height.length-1;
-    let max = 0;
+    // looking for area of rectangle
 
-   
-    while (left < right) {
-        let currentContainerHeight;
-        let area;
-        let currentContainerWidth = right - left;
+    // init variable to hold max value seen
+    // use two pointers -- L at beginning, R at end
+    // compute area of current container
+        // compare heights of L and R, smaller is height of container
+        // volume of container is height * distance between pointers
+        // store value in max variable
+        // shift smaller pointer 
+        // if L is smaller, shift right
+        // if R is smaller, shift left
+        // re compute and compare to current max
+        // If greater, replace max value, if smaller, move on
 
-        if (height[left] < height[right]) {
-            currentContainerHeight = height[left];
-            left++;
-        } else {
-            currentContainerHeight = height[right];
-            right--;
+
+        let max = 0;
+        let l = 0;
+        let r = height.length - 1;
+    
+    
+        while (l < r) {
+    
+            let containerHeight = Math.min(height[l], height[r]);
+            let width = r - l;
+            let currentContainer = containerHeight * width;
+            max = Math.max(max, currentContainer);
+            if (height[l] < height[r]) {
+                l++;
+            } else {
+                r--;
+            }
         }
 
-        area = currentContainerWidth * currentContainerHeight
-
-        if (area > max) max = area;
-        
-    }
-
-
-   return max;
-   
+        return max;
 };
 
 console.log(maxArea([1,8,6,2,5,4,8,3,7]));

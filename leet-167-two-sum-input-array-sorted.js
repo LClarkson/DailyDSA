@@ -33,20 +33,29 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
  * @return {number[]}
  */
 const twoSum = function(numbers, target) {
-    // input - number array, target number
-    // output - number array of "1-indexed" array indices
 
-    // create a map
-    const map = {};
+    // intput -- sorted array of nums
+    // output -- array of indices
 
-    for (let i = 0; i < numbers.length; i++) {
-        
-        if (!map[target - numbers[i]]) {
-            map[numbers[i]] = i + 1;
-        } else {
-            return [  map[target - numbers[i]], i + 1 ];
-        }
+    // **IMPORTANT** return indexes are not zero based, start at 1
+    // input array is sorted, use two pointers
+
+    // init left pointer to start of array
+    // init right pointer to end of array
+    // while left < right, sum elements and check against target
+    // if sum is too large, decrease right pointer and recheck
+    // if sum is too small, increase left pointer and recheck
+    // if solution is found, return true, else return false
+
+    let l = 0;
+    let r = numbers.length - 1;
+
+    while (l < r) {
+        if (numbers[l] + numbers[r] === target) return [l + 1, r + 1];
+        if (numbers[l] + numbers[r] > target) r--;
+        if (numbers[l] + numbers[r] < target) l++;
     }
+    
 };
 
-console.log(twoSum([2,3,4], 6));
+console.log(twoSum([2,3,4,7,11,15,16,20], 26));

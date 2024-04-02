@@ -12,5 +12,5 @@ console.log(noDupes2);
 const names = ['Luke', 'Max', 'Luke', 'Dad', 'Mom', 'Penny'];
 const dupeNames = [...new Set(names)];
 console.log(dupeNames);
-const set2 = new Set();
+const set2 = new Set(names);
 console.log(set2);

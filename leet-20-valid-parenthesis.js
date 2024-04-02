@@ -29,40 +29,35 @@ s consists of parentheses only '()[]{}'.
 */
 
 
-const isValid = (string) => {
+const isValid = (s) => {
   // input - string
   // output - boolean
 
-  // create a stack to push parens into
-  let stack = [];
-
-  // create hashmap to compare parens
-  const map = {
-    ")" : "(",
-    "]" : "[",
-    "}" : "{",
-  };
-
-  // loop through string, compare current paren with any paren in stack
-  for (const char of string) {
-    // check if current index is a closing bracket
-    const closingBracket = (char in map);
-    if (!closingBracket) {
-        stack.push(char);
-        continue; // stop current iteration and move to next iteration
+    const stack = [];
+    const bracketDictionary = {
+        '(': ')',
+        '{': '}',
+        '[': ']',
     }
+    // loop through input string
+    for (let i = 0; i < s.length; i++) {
 
-    const isEqual = stack[stack.length - 1] === map[char];
-    if (isEqual) {
-        stack.pop(); 
-        continue;
-    }
+        // if first element is a closing bracket, return false
+        if (s[0] === ')' || s[0] === '}' || s[0] === ']') return false;
 
-    return false;
-  }
+        // if current element is an openeing bracket, push to stack for comparison
+        if (s[i] === '(' || s[i] === '{' || s[i] === '[') {
+            stack.push(s[i]);
+        } else
 
-  return stack.length === 0;
+            // check closing paren, pop last paren off stack and see if it is the mirror of current element
+            if (bracketDictionary[stack.pop()] !== s[i]) {
+                return false;
+            }
+    };
+
+    return stack.length === 0;
 };
 
-console.log(isValid(')('));
+console.log(isValid('{[{}]}'));
 

@@ -1,0 +1,108 @@
+<mxfile host="65bd71144e">
+    <diagram id="pwNIN5E_M2G6e3hL77KQ" name="Page-1">
+        <mxGraphModel dx="759" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="2200" background="#0D1116" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;rounded=0;" parent="1" source="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;1&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="160" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;div style=&quot;color: rgb(230, 237, 243); background-color: rgb(13, 17, 23); font-family: Menlo, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #ff7b72;&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color: #ffa657;&quot;&gt;Node&lt;/span&gt;:&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: #ff7b72;&quot;&gt;&amp;nbsp; &amp;nbsp; def&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;__init__&lt;/span&gt;(self, &lt;span style=&quot;color: #ebebeb;&quot;&gt;value&lt;/span&gt;):&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.value &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #ebebeb;&quot;&gt;value&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.next &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;None&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="170" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div style=&quot;color: rgb(230, 237, 243); background-color: rgb(13, 17, 23); font-family: Menlo, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #ff7b72;&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color: #ffa657;&quot;&gt;LinkedList&lt;/span&gt;:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff7b72;&quot;&gt;&amp;nbsp; &amp;nbsp; def&lt;/span&gt; &lt;span style=&quot;color: #79c0ff;&quot;&gt;__init__&lt;/span&gt;(self, &lt;span style=&quot;color: #ebebeb;&quot;&gt;value&lt;/span&gt;):&amp;nbsp;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;new_node &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #ffa657;&quot;&gt;Node&lt;/span&gt;(&lt;span style=&quot;color: #ebebeb;&quot;&gt;value&lt;/span&gt;)&amp;nbsp;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.head &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; new_node&amp;nbsp;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.tail &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; new_node&amp;nbsp;&lt;/div&gt;&lt;div&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;self.length &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #e100ff;&quot;&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="300" width="280" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group;rounded=0;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="50" y="515" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;rounded=0;" parent="31" source="38" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="95" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;rounded=0;" parent="1" source="34" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="tail" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="500" width="60" height="22.22222222222222" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;rounded=0;" parent="1" source="36" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;value: 1&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="610" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="next: None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="620" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="head" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="500" width="60" height="22.22" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="length: 1" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="710" width="80" height="22.22" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;div style=&quot;background-color: rgb(13, 17, 23); font-family: Menlo, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; color: rgb(230, 237, 243);&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;my_linked_list &lt;span style=&quot;color: #ff7b72;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #ffa657;&quot;&gt;LinkedList&lt;/span&gt;(&lt;span style=&quot;color: #e100ff;&quot;&gt;1&lt;/span&gt;)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="450" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;div style=&quot;background-color: rgb(13, 17, 23); font-family: Menlo, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 21px; color: rgb(230, 237, 243);&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div style=&quot;line-height: 21px;&quot;&gt;&lt;div&gt;my_linked_list.&lt;span style=&quot;color: #d2a8ff;&quot;&gt;append&lt;/span&gt;(&lt;span style=&quot;color: #e100ff;&quot;&gt;2&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="790" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#E6E6E6;" parent="1" source="48" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00FF00;" parent="1" source="44" target="50" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="tail" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#00FF00;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="840" width="60" height="22.22222222222222" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="edgeStyle=none;html=1;rounded=0;" parent="1" source="46" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="990" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;value: 1&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="950" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="next: None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="960" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="head" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="840" width="60" height="22.22" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;font color=&quot;#00ff00&quot;&gt;length: 2&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="1050" width="80" height="22.22" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;value: 2&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;strokeColor=#00FF00;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="950" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="edgeStyle=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E6E6E6;" parent="1" source="50" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="990" as="targetPoint"/>
+                        <mxPoint x="210" y="1000" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="&lt;font color=&quot;#00ff00&quot;&gt;next: 2&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="960" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
