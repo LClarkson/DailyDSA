@@ -16,31 +16,49 @@ Output: [1]
  * @param {number} k
  * @return {number[]}
  */
-const topKFrequent = function(nums, k) {
-    // sort input array
+const topKFrequent = function (nums, k) {
+  // input - array of numbers, number
+  // output - array of numbers
 
-    // create map of nums, with key being unique num and value being number of occurences
-    const numsMap = {};
-    for (const num of nums) {
-        if (!numsMap[num]) {
-            numsMap[num] = 1;
-        } else {
-            numsMap[num] = numsMap[num] + 1;
-        }
-    } 
+  // IF there is only 1 number in the array, that is the most frequent element
+  // IF there are no numbers in the array, return 'no elements in array'
 
-    // sort map into most frequent nums seen, from most to least
-    const sortedMap = Object.entries(numsMap).sort((a,b) => b[1] - a[1]);
+  // create a map to hold numbers seen
 
-    // create array of top k seen numbers
-    const topK = [];
-    for (let i = 0; i < k; i++) {
-        topK.push(sortedMap[i][0]);
+  // iterate through input array
+  // IF current element is not in map, add element to map as a key and set its value to 1
+  // IF current element is already in map, increment its key by 1
+
+  // after iteration we should have: {1:3, 2:2, 3:1}
+
+  // create a new array with elements sorted by Object entries in decreasing order
+  // iterate through new array and push first k elements (index 0) to output array
+  // return output array
+
+  if (nums.length === 0) return "no elements in array";
+  if (nums.length === 1) return [nums[0]];
+
+  const map = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    if (!map[nums[i]]) {
+      map[nums[i]] = 1;
+    } else {
+      map[nums[i]] += 1;
     }
-    
-    return topK;
-    
+  }
 
+  const sorted = Object.entries(map)
+    .sort((a, b) => b[1] - a[1])
+    .splice(0, k);
+
+  const output = [];
+
+  for (let i = 0; i < k; i++) {
+    output.push(parseInt(sorted[i][0]));
+  }
+
+  return output;
 };
 
-topKFrequent([4,1,-1,2,-1,2,3], 2);
+topKFrequent([4, 1, -1, 2, -1, 2, 3], 2);
